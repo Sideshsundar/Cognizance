@@ -1,18 +1,20 @@
-Code in python
-
-
-print("Enter the number of terms:")
-n = int(input())
-f1 = 0
-f2 = 1
-if n < 1:
-    pass
-print(f1)
-for x in range(0, n + 1, 1):
-    print(f2)
-    fN = f1 + f2
-    f1 = f2
-    f2 = fN
-    x = x + 1
-print("The value of N-th term in fibonacci series is :")
-print(fN)
+Function Main
+    Declare Integer F1, F2, FN, N, X
+    
+    Output "Enter the number of terms:"
+    Input N
+    Assign F1 = 0
+    Assign F2 = 1
+    If N < 1
+    End
+    Output F1
+    For X = 0 to N
+        Output F2
+        Assign FN = F1 + F2
+        Assign F1 = F2
+        Assign F2 = FN
+        Assign X = X + 1
+    End
+    Output "The value of N-th term in fibonacci series is :"
+    Output FN
+End
