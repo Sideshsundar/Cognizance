@@ -1,24 +1,24 @@
 Function Main
-    Declare Integer N, D, R, I
+    Declare Integer N, Div, R, I
     
-    Assign D = 3
+    Assign Div = 3
     Output "Enter value for N:"
     Input N
-    
-    ... remainder = divident - divisor * (divident // divisor) 
-    ... D = divisor 
-    ... N = divident 
-    ... R = remainder
     For I = 0 to N
         If N > 0
-            Assign R = N-D
+            Assign R = N-Div
             Assign N = R
         End
     End
+    Declare Integer A, B, C
+    
+    Assign C = R
+    Assign A = (N/3)
+    Assign B = N-3*A
+    Assign R = B
     If R == 0
         Output "It is divisible by 3 . Hence True"
     False:
         Output "It is not divisible by 3 . Hence False"
     End
 End
-s
