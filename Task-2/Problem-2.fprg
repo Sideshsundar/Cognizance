@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="HP"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-16 08:59:56 PM"/>
+        <attribute name="created" value="SFA7U0lERVNIOzIwMjItMDItMTY7MDc6Mjc6NTQgUE07MTg4NA=="/>
+        <attribute name="edited" value="SFA7U0lERVNIOzIwMjItMDItMTY7MDg6NTk6NTYgUE07MTsyMDAw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="F1, F2, FN, N, X" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the number of terms:&quot;" newline="True"/>
+            <input variable="N"/>
+            <assign variable="F1" expression="0"/>
+            <assign variable="F2" expression="1"/>
+            <if expression="N &lt; 1">
+                <then/>
+                <else/>
+            </if>
+            <output expression="F1" newline="True"/>
+            <for variable="X" start="0" end="N" direction="inc" step="1">
+                <output expression="F2" newline="True"/>
+                <assign variable="FN" expression="F1 + F2"/>
+                <assign variable="F1" expression="F2"/>
+                <assign variable="F2" expression="FN"/>
+                <assign variable="X" expression="X + 1"/>
+            </for>
+            <output expression="&quot;The value of N-th term in fibonacci series is :&quot;" newline="True"/>
+            <output expression="FN" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

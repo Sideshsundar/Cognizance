@@ -1,0 +1,18 @@
+Code in python
+
+d = 3
+print("Enter value for N:")
+n = int(input())
+
+# remainder = divident - divisor * (divident // divisor)
+# D = divisor
+# N = divident
+# R = remainder
+for i in range(0, n + 1, 1):
+    if n > 0:
+        r = n - d
+        n = r
+if r == 0:
+    print("It is divisible by 3 . Hence True")
+else:
+    print("It is not divisible by 3 . Hence False")

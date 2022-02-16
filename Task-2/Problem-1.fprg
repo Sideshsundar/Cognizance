@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="HP"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-16 10:09:34 PM"/>
+        <attribute name="created" value="SFA7U0lERVNIOzIwMjItMDItMTY7MDk6Mzg6NTUgUE07MTg4OQ=="/>
+        <attribute name="edited" value="SFA7U0lERVNIOzIwMjItMDItMTY7MTA6MDk6MzQgUE07MTsxOTg0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N, D, R, I" type="Integer" array="False" size=""/>
+            <assign variable="D" expression="3"/>
+            <output expression="&quot;Enter value for N:&quot;" newline="True"/>
+            <input variable="N"/>
+            <comment text="remainder = divident - divisor * (divident // divisor)&#13;&#10;D = divisor&#13;&#10;N = divident&#13;&#10;R = remainder"/>
+            <for variable="I" start="0" end="N" direction="inc" step="1">
+                <if expression="N &gt; 0">
+                    <then>
+                        <assign variable="R" expression="N-D"/>
+                        <assign variable="N" expression="R"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <if expression="R == 0">
+                <then>
+                    <output expression="&quot;It is divisible by 3 . Hence True&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;It is not divisible by 3 . Hence False&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
