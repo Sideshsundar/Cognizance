@@ -4,15 +4,9 @@ Function Main
     Assign Div = 3
     Output "Enter value for N:"
     Input N
-    For I = 0 to N
-        If N > 0
-            Assign R = N-Div
-            Assign N = R
-        End
-    End
     Declare Integer A, B, C
     
-    Assign C = R
+    Assign C = N
     Assign A = (N/3)
     Assign B = N-3*A
     Assign R = B

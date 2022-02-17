@@ -4,10 +4,10 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="HP"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2022-02-17 02:15:49 AM"/>
+        <attribute name="saved" value="2022-02-17 12:01:27 PM"/>
         <attribute name="created" value="SFA7U0lERVNIOzIwMjItMDItMTY7MDk6Mzg6NTUgUE07MTg4OQ=="/>
         <attribute name="edited" value="SFA7U0lERVNIOzIwMjItMDItMTc7MDE6NTA6MjQgQU07MTtIUDtTSURFU0g7MjAyMi0wMi0xNzswMToxNjozNiBBTTtBLmZwcmc7NDQ4Nw=="/>
-        <attribute name="edited" value="SFA7U0lERVNIOzIwMjItMDItMTc7MDI6MTU6NDkgQU07NzsxOTgw"/>
+        <attribute name="edited" value="SFA7U0lERVNIOzIwMjItMDItMTc7MTI6MDE6MjcgUE07ODsxOTg4"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -16,17 +16,8 @@
             <assign variable="Div" expression="3"/>
             <output expression="&quot;Enter value for N:&quot;" newline="True"/>
             <input variable="N"/>
-            <for variable="I" start="0" end="N" direction="inc" step="1">
-                <if expression="N &gt; 0">
-                    <then>
-                        <assign variable="R" expression="N-Div"/>
-                        <assign variable="N" expression="R"/>
-                    </then>
-                    <else/>
-                </if>
-            </for>
             <declare name="A, B, C" type="Integer" array="False" size=""/>
-            <assign variable="C" expression="R"/>
+            <assign variable="C" expression="N"/>
             <assign variable="A" expression="(N/3)"/>
             <assign variable="B" expression="N-3*A"/>
             <assign variable="R" expression="B"/>
